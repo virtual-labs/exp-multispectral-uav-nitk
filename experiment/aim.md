@@ -1,1 +1,1 @@
-### Aim of the experiment
+To monitor plant health using a Multispectral camera in a photogrammetry survey.

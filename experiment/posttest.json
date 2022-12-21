@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "NDVI images are constructed using which information of the multispectral sensor",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "NIR and Red",
+        "b": "Red and Red Edge",
+        "c": "NIR and Red Edge",
+        "d": "NIR, Red, and Red Edge"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -19,12 +19,64 @@
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The maximum wavelength range of spectral reflectance curve of vegetation reflectance is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Beyond 1.3μm",
+        "b": "Below 0.7μm",
+        "c": "0.4 to 0.7 μm",
+        "d": "0.7 to 1.3 μm"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    }, 
+    {
+      "question": "The spectral reflectance curve of vegetation is high at",
+      "answers": {
+        "a": " Visible region",
+        "b": " NIR Region",
+        "c": "Infrared region",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "At near-infrared wavelengths range and beyond the water curve is characterized by ",
+      "answers": {
+        "a": " High absorption",
+        "b": " Low absorption",
+        "c": "High reflectance",
+        "d": "Low reflectance"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Intermediate"
+    }
+    ,
+    {
+      "question": "Which is responsible for the color or tone in a photographic image of an object",
+      "answers": {
+        "a": "  Solar Irradiance",
+        "b": " Absorbed Energy",
+        "c": "Spectral reflectance",
+        "d": " None of the above"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -33,7 +85,7 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "Intermediate"
     }
   ]
 }
