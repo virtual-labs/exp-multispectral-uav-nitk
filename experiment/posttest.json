@@ -67,7 +67,7 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "a",
-      "difficulty": "Intermediate"
+      "difficulty": "intermediate"
     }
     ,
     {
@@ -85,7 +85,7 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
-      "difficulty": "Intermediate"
+      "difficulty": "intermediate"
     }
   ]
 }
