@@ -33,7 +33,7 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "a",
-      "difficulty": "Advanced"
+      "difficulty": "advanced"
     },
     {
       "question": "Which color corresponds to the maximum wavelength?",
@@ -67,7 +67,7 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "d",
-      "difficulty": "Intermediate"
+      "difficulty": "intermediate"
     },
     {
       "question": "Red Edge sensor associates with a wavelength of",
@@ -84,7 +84,7 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
-      "difficulty": "Intermediate"
+      "difficulty": "intermediate"
     }
   ]
 }
