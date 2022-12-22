@@ -6,7 +6,7 @@
 
 2. Click on the antennas to unfold them.
 
-   ![Alt text](images/2.PNG)
+   ![Alt text](images/2.png)
 
 3. Unfold the device holder, and click on the device to place it on the holder.
 
