@@ -11,7 +11,7 @@ Vegetation Indices are constructed from reflectance measurements in two or more 
 
 NDVI =(NIR — Red)/(NIR + Red)
 
-<figcaption>Source: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWVTIRPw__peusZGzVnrwhgN6Wo2y-6Egaaw&s</figcaption>
+<figcaption>Source: <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWVTIRPw__peusZGzVnrwhgN6Wo2y-6Egaaw&s">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWVTIRPw__peusZGzVnrwhgN6Wo2y-6Egaaw&s</a></figcaption>
 
 </center>
 
@@ -21,7 +21,7 @@ Spectral reflectance refers to the proportion of incident light reflected by a s
 
 <img src="./images/suv.png" alt="ndvi" width="350" />
 
-<figcaption>Source: https://www.researchgate.net/profile/Anamaria-Roman-2/publication/315797574/figure/fig4/AS:610521724235776@1522571130104/The-spectral-reflectance-curve-of-vegetation-The-major-absorption-and-reflectance.png</figcaption>
+<figcaption>Source: <a href="https://www.researchgate.net/profile/Anamaria-Roman-2/publication/315797574/figure/fig4/AS:610521724235776@1522571130104/The-spectral-reflectance-curve-of-vegetation-The-major-absorption-and-reflectance.png">https://www.researchgate.net/profile/Anamaria-Roman-2/publication/315797574/figure/fig4/AS:610521724235776@1522571130104/The-spectral-reflectance-curve-of-vegetation-The-major-absorption-and-reflectance.png</a></figcaption>
 
 </center>
 
