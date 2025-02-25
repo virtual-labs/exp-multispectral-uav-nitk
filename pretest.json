@@ -1,0 +1,90 @@
+﻿{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which of the following is not purely an application of a Multispectral sensor?",
+      "answers": {
+        "a": "Survey fencing and farm buildings",
+        "b": "Provide data on soil fertility",
+        "c": "Monitor livestock",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Survey fencing and farm buildings is an an application of a Multispectral sensor",
+        "b": "Soil fertility is an an application of a Multispectral sensor",
+        "c": "Correct Answer. Monitor livestock is an application of thermal sensor.",
+        "d": "Monitor livestock is an application of thermal sensor."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Accuracy and consistency of data collection through different times of the day which is maximized by the ________ sensor on top of the drone captures?",
+      "answers": {
+        "a": "Solar irradiance",
+        "b": "Solar absorption",
+        "c": "Atmospheric absorption",
+        "d": "Atmospheric irradiance"
+      },
+      "explanations": {
+        "a": "Correct Answer. Accuracy and consistency of data collection through different times of the day which is maximized by the Solar irradiance sensor.",
+        "b": "Accuracy and consistency of data collection through different times of the day which is maximized by the Solar irradiance sensor.",
+        "c": "Accuracy and consistency of data collection through different times of the day which is maximized by the Solar irradiance sensor.",
+        "d": "Accuracy and consistency of data collection through different times of the day which is maximized by the Solar irradiance sensor."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which color corresponds to the maximum wavelength?",
+      "answers": {
+        "a": "Blue",
+        "b": "Red",
+        "c": "Green",
+        "d": "Violet"
+      },
+      "explanations": {
+        "a": "Blue corresponds to the minimum wavelength",
+        "b": "Correct Answer. Red corresponds to the maximum wavelength",
+        "c": "Red corresponds to the maximum wavelength",
+        "d": "Violet corresponds to the minimum wavelength"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "NDVI (Normalized Difference Vegetation Index) value varies from?",
+      "answers": {
+        "a": "0 to 1",
+        "b": "0 to 0.5",
+        "c": "0.5 to 1",
+        "d": "-1 to 1"
+      },
+      "explanations": {
+        "a": "NDVI is calculated as a ratio between the red and near infrared values. Value is between -1 to 1.",
+        "b": "NDVI is calculated as a ratio between the red and near infrared values. Value is between -1 to 1.",
+        "c": "NDVI is calculated as a ratio between the red and near infrared values. Value is between -1 to 1.",
+        "d": "Correct Answer. NDVI is calculated as a ratio between the red and near infrared values. Value is between -1 to 1."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Red Edge sensor associates with a wavelength of",
+      "answers": {
+        "a": "400nm -700nm",
+        "b": "700nm- 760nm",
+        "c": "700nm – 730nm",
+        "d": "600nm- 630nm"
+      },
+      "explanations": {
+        "a": "Red Edge is in between the Visible Red and Near Infrared bands.",
+        "b": "Red Edge is in between the Visible Red and Near Infrared bands.",
+        "c": "Correct Answer. Red Edge spans  in 700 -730 nanometers, placing it between the Visible Red and Near Infrared bands.",
+        "d": "Red Edge is in between the Visible Red and Near Infrared bands."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    }
+  ]
+}
