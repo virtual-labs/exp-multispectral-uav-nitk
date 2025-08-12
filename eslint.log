@@ -1,0 +1,97 @@
+
+/home/runner/work/exp-multispectral-uav-nitk/exp-multispectral-uav-nitk/experiment/simulation/js/sim.js
+    24:9   warning  'simsubscreennum' is not defined                   no-undef
+    25:11  warning  'itv' is not defined                               no-undef
+    27:9   warning  'inCount' is not defined                           no-undef
+    28:18  warning  'itv' is not defined                               no-undef
+    28:30  warning  'itv' is not defined                               no-undef
+    30:9   warning  'inCount' is not defined                           no-undef
+    31:18  warning  'itv' is not defined                               no-undef
+    31:30  warning  'itv' is not defined                               no-undef
+    33:9   warning  'inCount' is not defined                           no-undef
+    34:18  warning  'itv' is not defined                               no-undef
+    36:9   warning  'inCount' is not defined                           no-undef
+    86:11  warning  'dispAns' is already defined                       no-redeclare
+    93:11  warning  'dispAns' is already defined                       no-redeclare
+   102:5   warning  'nextFunction' is not defined                      no-undef
+   109:7   warning  'nextFunction' is not defined                      no-undef
+   122:10  warning  'navNext' is defined but never used                no-unused-vars
+   123:8   warning  'temp' is not defined                              no-undef
+   123:18  warning  'temp' is not defined                              no-undef
+   123:29  warning  'temp' is not defined                              no-undef
+   124:40  warning  'temp' is not defined                              no-undef
+   126:3   warning  'simsubscreennum' is not defined                   no-undef
+   127:38  warning  'simsubscreennum' is not defined                   no-undef
+   138:10  warning  'animatearrow1' is defined but never used          no-unused-vars
+   145:17  warning  'myInt' is not defined                             no-undef
+   152:5   warning  'released' is assigned a value but never used      no-unused-vars
+   153:5   warning  'v' is assigned a value but never used             no-unused-vars
+   155:7   warning  'simsubscreennum' is not defined                   no-undef
+   162:5   warning  'myInt' is not defined                             no-undef
+   178:9   warning  'myInt' is not defined                             no-undef
+   200:14  warning  'simsubscreennum' is not defined                   no-undef
+   204:5   warning  'myInt' is not defined                             no-undef
+   247:15  warning  'myInt' is not defined                             no-undef
+   283:14  warning  'simsubscreennum' is not defined                   no-undef
+   285:5   warning  'myInt' is not defined                             no-undef
+   303:11  warning  'myInt' is not defined                             no-undef
+   344:14  warning  'simsubscreennum' is not defined                   no-undef
+   359:7   warning  'myInt' is not defined                             no-undef
+   374:11  warning  'myInt' is not defined                             no-undef
+   390:15  warning  'myInt' is not defined                             no-undef
+   412:21  warning  'myInt' is not defined                             no-undef
+   437:27  warning  'myInt' is not defined                             no-undef
+   481:33  warning  'myInt' is not defined                             no-undef
+   608:41  warning  'myInt' is not defined                             no-undef
+   724:14  warning  'simsubscreennum' is not defined                   no-undef
+   737:7   warning  'myInt' is not defined                             no-undef
+   763:14  warning  'simsubscreennum' is not defined                   no-undef
+   773:7   warning  'myInt' is not defined                             no-undef
+   805:17  warning  'myInt' is not defined                             no-undef
+   828:25  warning  'myInt' is not defined                             no-undef
+   902:14  warning  'simsubscreennum' is not defined                   no-undef
+   913:5   warning  'myInt' is not defined                             no-undef
+  1360:14  warning  'simsubscreennum' is not defined                   no-undef
+  1388:10  warning  'generateQuestion' is defined but never used       no-unused-vars
+  1408:10  warning  'screen1Proceed' is defined but never used         no-unused-vars
+  1411:10  warning  'screen2Proceed' is defined but never used         no-unused-vars
+  1412:3   warning  'myInt' is not defined                             no-undef
+  1473:13  warning  'myInt' is not defined                             no-undef
+  1511:10  warning  'hidedial' is defined but never used               no-unused-vars
+  1515:10  warning  'hidedial1' is defined but never used              no-unused-vars
+  1519:10  warning  'hidedialog' is defined but never used             no-unused-vars
+  1523:10  warning  'hidedialog1' is defined but never used            no-unused-vars
+  1531:10  warning  'hidedial2' is defined but never used              no-unused-vars
+  1535:10  warning  'hidedial3' is defined but never used              no-unused-vars
+  1539:10  warning  'hidedial7' is defined but never used              no-unused-vars
+  1544:5   warning  'y' is defined but never used                      no-unused-vars
+  1545:10  warning  'handleFlightSelection' is defined but never used  no-unused-vars
+  1584:10  warning  'change1' is defined but never used                no-unused-vars
+  1597:10  warning  'up' is defined but never used                     no-unused-vars
+  1603:5   warning  'myVar' is assigned a value but never used         no-unused-vars
+  1605:10  warning  'loadFunction' is defined but never used           no-unused-vars
+  1613:5   warning  'i' is already defined                             no-redeclare
+  1621:5   warning  Move function declaration to function body root    no-inner-declarations
+  1640:5   warning  Move function declaration to function body root    no-inner-declarations
+  1652:10  warning  'move2' is defined but never used                  no-unused-vars
+  1659:5   warning  Move function declaration to function body root    no-inner-declarations
+  1678:5   warning  Move function declaration to function body root    no-inner-declarations
+  1698:10  warning  'check_value' is defined but never used            no-unused-vars
+  1764:10  warning  'checkClicked' is defined but never used           no-unused-vars
+  1770:10  warning  'contents' is defined but never used               no-unused-vars
+  1773:10  warning  'res' is defined but never used                    no-unused-vars
+  1776:10  warning  'res1' is defined but never used                   no-unused-vars
+  1779:10  warning  'res2' is defined but never used                   no-unused-vars
+  1782:7   warning  'txt1' is assigned a value but never used          no-unused-vars
+  1783:7   warning  'bts1' is assigned a value but never used          no-unused-vars
+  1784:7   warning  'out1' is assigned a value but never used          no-unused-vars
+  1785:10  warning  'setTitle' is defined but never used               no-unused-vars
+  1793:10  warning  'showToolTip' is defined but never used            no-unused-vars
+  1796:10  warning  'hideToolTip' is defined but never used            no-unused-vars
+  1800:10  warning  'showToolTip1' is defined but never used           no-unused-vars
+  1803:10  warning  'hideToolTip1' is defined but never used           no-unused-vars
+  1807:10  warning  'showToolTip2' is defined but never used           no-unused-vars
+  1810:10  warning  'hideToolTip2' is defined but never used           no-unused-vars
+
+✖ 92 problems (0 errors, 92 warnings)
+

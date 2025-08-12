@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simulation1</title>
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/mathstyle.css" />
+    <script  src="./js/sim.js"></script>
+    <script>
+      var simsubscreennum = 0;
+      var temp = 0;
+      var snd = document.getElementById("sound");
+    </script>
+
+    <style></style>
+  </head>
+
+  <body style="margin: 0; font-family: verdana">
+    <div id="simscreen">
+      <div id="title">
+        <h3>Precision agriculture using Multispectral UAV</h3>
+      </div>
+      <div class="simsubscreen" id="canvas0">
+        <h4 class="incanvas">Objective:</h4>
+        <p class="incanvas" style="font-size: 14px">
+          To monitor plant health using a Multispectral camera in a photogrammetry survey.
+        </p>
+        <br />
+        <h4 class="incanvas">Apparatus used:</h4>
+        <p class="incanvas" style="font-size: 14px">
+          Drone with multispectral camera, Battery, Interface device (phone/iPad), USB cable,
+          Landing pad.
+        </p>
+        <br />
+        <img
+          style="
+            position: absolute;
+            left: 0px;
+            top: 174px;
+            max-width: 17%;
+            width: 100%;
+            transform: rotateY(180deg);
+          "
+          src="./images/man1.png"
+          title="Man"
+        />
+        <img
+          style="position: absolute; left: 120px; top: 232px; width: 620px"
+          src="./images/table.png"
+        />
+        <img
+          style="position: absolute; left: 186px; top: 289px; width: 65px"
+          title="Controller"
+          src="./images/controller3.png"
+        />
+        <img
+          style="position: absolute; left: 221px; top: 234px; width: 254px"
+          title="Drone"
+          src="./images/msdrone6.png"
+        />
+        <img
+          style="position: absolute; left: 480px; top: 249px; width: 70px"
+          title="IPad"
+          src="./images/IPad_2.png"
+        />
+        <img
+          style="position: absolute; left: 470px; top: 298px; width: 90px"
+          title="Landing Pad"
+          src="./images/bagg.png"
+        />
+        <img
+          style="
+            position: absolute;
+            left: 560px;
+            top: 220px;
+            max-width: 145px;
+            height: 130px;
+            width: 100%;
+          "
+          title="Drone box"
+          src="./images/sl13.png"
+        />
+        <br />&nbsp;<span
+          class="tooltip"
+          style="
+            border-bottom: 1px dotted;
+            color: red;
+            text-align: justify;
+            top: -26px;
+          "
+          >Description
+          <span class="tooltiptext">
+            <p><strong style="color: red"></strong>  Multispectral cameras are equipped with lenses and filters that pick up wavelengths beyond the visible spectrum—in the direction of infrared wavelengths. Plants and soil absorb and reflect wavelengths from sunlight depending on their contents. For example, when a plant is healthy and engaged in photosynthesis, it will absorb a lot of red and blue light and reflect green and a lot more infrared light.</p>
+            
+          </span>
+        </span>
+      </div>
+      <div class="simsubscreen" id="canvas1" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;1&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Unfold the antennas of the transmitter on both the sides.
+        </p>
+
+        <!-- <img id="1-4" style="position: absolute; left:200px; top:196px; width:140px; " src="./images/antena2.png"/>  -->
+        <img
+          id="1-4"
+          style="
+            position: absolute;
+            left: 185px;
+            top: 193px;
+            width: 169px;
+            transform: rotatex(-180deg);
+          "
+          src="./images/A.png"
+        />
+        <img
+          id="1-3"
+          style="position: absolute; left: 171px; top: 193px; width: 169px"
+          src="./images/A.png"
+        />
+        <img
+          id="1-2"
+          style="position: absolute; left: 155px; top: 206px; width: 200px"
+          src="./images/prajna.png"
+        />
+      </div>
+      <div class="simsubscreen" id="canvas2" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;2&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Unfold the phone/iPad holder and press the button on the side to
+          place the device phone/iPad on the holder of the transmitter.
+        </p>
+        <img
+          id="1-6"
+          style="
+            position: absolute;
+            left: 197px;
+            top: 167px;
+            width: 123px;
+            visibility: hidden;
+          "
+          src="./images/21p.jpg"
+        />
+        <img
+          id="pk"
+          style="position: absolute; left: 153px; top: 166px; width: 203px"
+          title="Controller"
+          src="./images/p11.png"
+        />
+        <img
+          id="ps-1"
+          style="position: absolute; left: 180px; top: 158px; width: 149px"
+          src="./images/sk.png"
+        />
+        <img
+          id="pk2"
+          style="
+            position: absolute;
+            left: 155px;
+            top: 50px;
+            width: 100px;
+            visibility: hidden;
+          "
+          src="./images/pk2.png"
+        />
+
+        <img
+          id="pk3"
+          style="
+            position: absolute;
+            left: 152px;
+            top: 165px;
+            width: 205px;
+            visibility: hidden;
+          "
+          title="Controller"
+          src="./images/p1-1.png"
+        />
+        <img
+          id="1-7"
+          style="
+            position: absolute;
+            left: 307px;
+            top: 200px;
+            width: 8px;
+            visibility: hidden;
+          "
+          src="./images/But.png"
+        />
+
+        <img
+          id="hand"
+          style="
+            position: absolute;
+            left: 100px;
+            top: 65px;
+            width: 150px;
+            visibility: hidden;
+          "
+          src="./images/1h1.png"
+        />
+        <img
+          class="tran"
+          id="3-1"
+          style="
+            position: absolute;
+            left: 135px;
+            top: 76px;
+            width: 200px;
+            height: 400px;
+            visibility: hidden;
+            transition: width 3s, height 3s;
+          "
+          title="controller"
+          src="./images/S44.png"
+        />
+        <img
+          id="3-2"
+          style="
+            position: absolute;
+            left: 490px;
+            top: 150px;
+            width: 234px;
+            visibility: hidden;
+          "
+          title="IPad"
+          src="./images/ipd.png"
+        />
+        <img
+          id="4-1"
+          style="
+            position: absolute;
+            left: 34px;
+            width: 383px;
+            top: 77px;
+            visibility: hidden;
+          "
+          src="./images/S55.png"
+        />
+      </div>
+      <div class="simsubscreen" id="canvas3" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;3&nbsp;</span>
+        <p class="steptext">
+          &nbsp; Connect the phone/iPad placed to the transmitter using a USB
+          Cable.
+        </p>
+        <img
+          id="4-2-2"
+          style="position: absolute; left: 500px; width: 200px; top: 180px"
+          src="./images/cablehand-old.png"
+        />
+        <img
+          id="4-2"
+          style="
+            position: absolute;
+            left: 400px;
+            width: 80px;
+            top: 202px;
+            visibility: hidden;
+          "
+          src="./images/cable2.png"
+        />
+        <img
+          id="4-1-1"
+          style="position: absolute; left: 34px; width: 383px; top: 77px"
+          src="./images/S55.png"
+        />
+
+        <img
+          id="4-4"
+          style="
+            position: absolute;
+            left: 240px;
+            width: 371px;
+
+            top: 152px;
+            visibility: hidden;
+          "
+          src="./images/slide812.png"
+        />
+        <img
+          id="4-5"
+          style="
+            position: absolute;
+            left: 426px;
+            width: 132px;
+
+            top: 336px;
+            visibility: hidden;
+          "
+          src="./images/cablehand2.png"
+        />
+        <img
+          id="4-6"
+          style="
+            position: absolute;
+            left: 240px;
+            width: 371px;
+
+            top: 152px;
+            visibility: hidden;
+          "
+          src="./images/slide811.png"
+        />
+        <img
+          id="4-7"
+          style="
+            position: absolute;
+            left: 349px;
+            top: 158px;
+            width: 371px;
+
+            visibility: hidden;
+          "
+          src="./images/slide83.png"
+        />
+        <span
+          id="dialog"
+          style="
+            position: absolute;
+            padding: 5px;
+
+            background-color: white;
+            left: 100px;
+            top: 49px;
+            width: 90px;
+            visibility: hidden;
+          "
+        >
+          <p
+            id="divp"
+            style="color: black; font-size: 15px; justify-content: center"
+          >
+            <b> Top View </b>
+          </p>
+        </span>
+        <span
+          id="dialog1"
+          style="
+            position: absolute;
+            padding: 5px;
+
+            background-color: white;
+
+            justify-content: center;
+            left: 484px;
+            top: 49px;
+            width: 90px;
+            visibility: hidden;
+          "
+        >
+          <p id="divp1" style="color: black; font-size: 15px">
+            <b>Back view</b>
+          </p>
+        </span>
+      </div>
+      <div class="simsubscreen" id="canvas4" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;4&nbsp;</span>
+        <p class="steptext">
+          &nbsp; Remove the drone from the box and remove the gimble cover from the camera and insert the propellers to the motors and
+          lock them.
+        </p>
+        <span
+          id="dialog3"
+          style="
+            position: absolute;
+            padding: 3px;
+            border: 1px solid black;
+            background-color: black;
+            border-radius: 5px;
+            left: 210px;
+            top: 70px;
+            width: 284px;
+          "
+        >
+          <p
+            id="divp2"
+            style="color: white; font-size: 15px; padding: 5px; margin-top: 0px"
+          >
+            Note:- Carefully remove the camera holder.
+          </p>
+          <input
+            type="button"
+            style="
+              cursor: pointer;
+              border-radius: 5px;
+              margin: 0auto;
+              margin-left: 125px;
+              margin-top: 0px;
+            "
+            id="5-7"
+            value="OK"
+          />
+        </span>
+        <img
+          id="6-1"
+          style="position: absolute; left: 223px; width: 276px; top: 160px"
+          src="./images/sl13.png"
+        />
+        <img
+          id="6-4"
+          style="position: absolute; left: 341px; width: 26px; top: 230px"
+          src="./images/lk.png"
+        />
+        <img
+          id="6-2"
+          style="
+            position: absolute;
+            left: 114px;
+            width: 500px;
+            top: 160px;
+            visibility: hidden;
+          "
+          src="./images/box.png"
+        />
+        <img
+          id="6-3"
+          style="
+            position: absolute;
+            left: -48px;
+            width: 274px;
+            top: 81px;
+            visibility: hidden;
+          "
+          src="./images/msd.png"
+        />
+        <img
+          id="6-3-3"
+          style="
+            position: absolute;
+            left: 300px;
+            top: 250px;
+            width: 400px;
+            visibility: hidden;
+          "
+          src="./images/msdrone1.1.png"
+        />
+        <img
+          id="6-3-3a"
+          style="
+            position: absolute;
+            left: 200px;
+            top: 186px;
+            width: 317px;
+            visibility: hidden;
+          "
+          src="./images/cam.png"
+        />
+        <img
+          id="6-3-4a"
+          style="
+            position: absolute;
+            left: 272px;
+            top: 218px;
+            width: 49px;
+            visibility: hidden;
+          "
+          src="./images/lens.png"
+        />
+        <img
+          id="6-3-4b"
+          style="
+            position: absolute;
+            left: 338px;
+            top: 218px;
+            width: 49px;
+            visibility: hidden;
+          "
+          src="./images/lens.png"
+        />
+        <img
+          id="6-3-4c"
+          style="
+            position: absolute;
+            left: 399px;
+            top: 218px;
+            width: 49px;
+            visibility: hidden;
+          "
+          src="./images/lens.png"
+        />
+        <img
+          id="6-3-4d"
+          style="
+            position: absolute;
+            left: 272px;
+            top: 287px;
+            width: 49px;
+            visibility: hidden;
+          "
+          src="./images/lens.png"
+        />
+        <img
+          id="6-3-4e"
+          style="
+            position: absolute;
+            left: 338px;
+            top: 287px;
+            width: 49px;
+            visibility: hidden;
+          "
+          src="./images/lens.png"
+        />
+        <img
+          id="6-3-4f"
+          style="
+            position: absolute;
+            left: 399px;
+            top: 287px;
+            width: 49px;
+            visibility: hidden;
+          "
+          src="./images/lens.png"
+        />
+        <img
+          id="6-3-4aa"
+          style="
+            position: absolute;
+            left: 223px;
+            top: 94px;
+            width: 63px;
+            rotate: -26deg;
+            visibility: hidden;
+          "
+          src="./images/arrow5.png"
+        />
+        <p id="6aa" style="position: absolute; left: 122px; width: 210px; top: 73px; font-weight: bold; font-size: 12px; visibility: hidden;">Red Edge (RE): 730 nm</p>
+        <img
+          id="6-3-4bb"
+          style="
+            position: absolute;
+            left: 329px;
+            top: 86px;
+            width: 63px;
+            rotate: 0deg;
+            visibility: hidden;
+          "
+          src="./images/arrow5.png"
+        />
+        <p id="6bb" style="position: absolute; left: 273px; top: 51px; width: 210px;font-size: 12px; font-weight: bold; visibility: hidden;">Near-Infrared(NIR): 840 nm</p>
+        <img
+          id="6-3-4cc"
+          style="
+            position: absolute;
+            left: 434px;
+            top: 96px;
+            width: 63px;
+            rotate: 26deg;
+            visibility: hidden;
+          "
+          src="./images/arrow5.png"
+        />
+        <p id="6cc" style="position: absolute; left: 459px; top: 78px; width: 210px; font-size: 12px; font-weight: bold; visibility: hidden;">Green(G): 560 nm</p>
+        <img
+          id="6-3-4dd"
+          style="
+            position: absolute;
+            left: 241px;
+            top: 330px;
+            width: 63px;
+            rotate: -160deg;
+            visibility: hidden;
+          "
+          src="./images/arrow5.png"
+        />
+        <p id="6dd" style="position: absolute; left: 178px;  top: 448px; width: 210px; font-size: 12px; font-weight: bold; visibility: hidden;">Visible light (RGB)</p>
+        <img
+          id="6-3-4ee"
+          style="
+            position: absolute;
+            left: 332px;
+            top: 333px;
+            width: 63px;
+            rotate: 180deg;
+            visibility:hidden;
+          "
+          src="./images/arrow5.png"
+        />
+        <p id="6ee" style="position: absolute; left: 310px; top: 461px; width: 210px; font-size: 12px; font-weight: bold; visibility: hidden;">Red (R): 650 nm</p>
+        <img
+          id="6-3-4ff"
+          style="
+            position: absolute;
+            left: 424px;
+            top: 326px;
+            width: 63px;
+            rotate: 160deg;
+            visibility: hidden;
+          "
+          src="./images/arrow5.png"
+        />
+        <p id="6ff" style="position: absolute; left: 440px; top: 444px; width: 210px; font-size: 12px; font-weight: bold; visibility: hidden;">Blue (B): 450 nm</p>
+        <img
+          id="6-3-4"
+          style="
+            position: absolute;
+            left: 407px;
+            width: 196px;
+            top: 427px;
+            visibility: hidden;
+          "
+          src="./images/gimble.png"
+        />
+        <img
+          id="6-5"
+          style="
+            position: absolute;
+            left: 114px;
+            width: 280px;
+            top: 160px;
+            visibility: hidden;
+          "
+          src="./images/up.png"
+        />
+        <img
+          id="6-6"
+          style="
+            position: absolute;
+            left: 493px;
+            width: 221px;
+            top: 160px;
+            visibility: hidden;
+          "
+          src="./images/blade.png"
+        />
+        <img
+          id="6-6a"
+          style="
+            position: absolute;
+            left: 271px;
+            width: 221px;
+            top: 164px;
+            visibility: hidden;
+          "
+          src="./images/blade.png"
+        />
+        <img
+          id="6-6b"
+          style="
+            position: absolute;
+            left: 264px;
+            width: 221px;
+            top: 396px;
+            visibility: hidden;
+          "
+          src="./images/blade.png"
+        />
+        <img
+          id="6-6c"
+          style="
+            position: absolute;
+            left: 16px;
+            width: 222px;
+            top: 386px;
+            visibility: hidden;
+          "
+          src="./images/blade.png"
+        />
+        <img
+          id="6-6d"
+          style="
+            position: absolute;
+            left: 34px;
+            width: 221px;
+            top: 153px;
+            visibility: hidden;
+          "
+          src="./images/blade.png"
+        />
+        <img
+          id="6-7"
+          style="
+            position: absolute;
+            left: 341px;
+            width: 128px;
+            top: 101px;
+            visibility: hidden;
+          "
+          src="./images/propller.png"
+        />
+        <img
+          id="6-7a"
+          style="
+            position: absolute;
+            left: 338px;
+            width: 128px;
+            top: 328px;
+            visibility: hidden;
+          "
+          src="./images/propller.png"
+        />
+        <img
+          id="6-7b"
+          style="
+            position: absolute;
+            left: 95px;
+            width: 128px;
+            top: 305px;
+            visibility: hidden;
+          "
+          src="./images/propller.png"
+        />
+        <img
+          id="6-7c"
+          style="
+            position: absolute;
+            left: 121px;
+            width: 128px;
+            top: 80px;
+            visibility: hidden;
+          "
+          src="./images/propller.png"
+        />
+      </div>
+      <div class="simsubscreen" id="canvas5" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;5&nbsp;</span>
+        <p class="steptext">
+          &nbsp; Insert the fully charged battery in the slot
+        </p>
+        <img
+          id="7-1"
+          style="position: absolute; left: 223px; width: 276px; top: 160px"
+          src="./images/battery.png"
+        />
+        <img
+          id="7-3"
+          style="
+            position: absolute;
+            left: 150px;
+            width: 533px;
+            top: 160px;
+            visibility: hidden;
+          "
+          src="./images/withoutBat.png"
+        />
+        <img
+          id="7-2"
+          style="
+            position: absolute;
+            left: -6px;
+            width: 223px;
+            top: 165px;
+            visibility: hidden;
+          "
+          src="./images/slide23-1.png"
+        />
+        <img
+          id="7-4"
+          style="
+            position: absolute;
+            left: 150px;
+            width: 533px;
+            top: 160px;
+            visibility: hidden;
+          "
+          src="./images/msdrone6.png"
+        />
+      </div>
+      <div class="simsubscreen" id="canvas6" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;6&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Open the Landing pad and place the drone on the Landing pad.
+        </p>
+        <span
+          id="dial"
+          style="
+            position: absolute;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: black;
+            border-radius: 5px;
+            left: 191px;
+            top: 49px;
+            width: 303px;
+          "
+        >
+          <p
+            id="divi1"
+            style="color: white; font-size: 15px; padding: 5px; margin-top: 0px"
+          >
+            Note:- Unfold the landing pad.
+          </p>
+          <input
+            type="button"
+            style="
+              cursor: pointer;
+              border-radius: 5px;
+              margin: 0auto;
+              margin-left: 125px;
+              margin-top: 0px;
+            "
+            id="5-6"
+            value="OK"
+            onclick=" hidedial();"
+          />
+        </span>
+        <img
+          id="5-1"
+          alt="Open the zip and place the landing pad"
+          style="position: absolute; left: 221px; width: 288px; top: 141px"
+          src="./images/S10.png"
+        />
+        <img
+          id="5-2"
+          style="
+            position: absolute;
+            left: 257px;
+            width: 276px;
+            top: 201px;
+            visibility: hidden;
+          "
+          src="./images/8-1-1.png"
+        />
+        <img
+          id="5-3"
+          style="
+            position: absolute;
+            left: 257px;
+            width: 276px;
+            top: 201px;
+            visibility: hidden;
+          "
+          src="./images/drawing4.png"
+        />
+        <img
+          id="5-4"
+          style="
+            position: absolute;
+            left: 300px;
+            width: 420px;
+            top: 160px;
+            visibility: hidden;
+          "
+          src="./images/S3.png"
+        />
+        <img
+          id="5-5"
+          style="
+            position: absolute;
+            left: -30px;
+            width: 349px;
+            top: 260px;
+            visibility: hidden;
+          "
+          src="./images/msdrone6.png"
+        />
+        <span
+        id="dialog7"
+        style="
+          position: absolute;
+          padding: 10px;
+          border: 1px solid black;
+          background-color: black;
+          border-radius: 5px;
+          left: 365px;
+          top: 103px;
+          width: 303px;
+          visibility: hidden;
+        "
+      >
+        <p
+          id="divi7"
+          style="color: white; font-size: 15px; padding: 5px; margin-top: 0px;visibility: hidden;"
+        >
+          Note:- The Multispectral camera will capture 6 images at each scene.
+        </p>
+        <input
+          type="button"
+          style="
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0auto;
+            margin-left: 125px;
+            margin-top: 0px;
+          "
+          id="5-6-7"
+          value="OK"
+          onclick=" hidedial7();"
+        />
+      </span>
+        
+      </div>
+      <div class="simsubscreen" id="canvas7" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;7&nbsp;</span>
+        <p class="steptext">&nbsp;Open the flight plan & start the mission</p>
+
+        <img
+          id="7-1-1"
+          style="
+            position: absolute;
+            left: 130px;
+            width: 376px;
+            top: 39px;
+            visibility: hidden;
+          "
+          src="./images/S55.png"
+        />
+        <img
+          id="7-1-3"
+          style="
+            position: absolute;
+            left: 279px;
+            width: 46px;
+            top: 420px;
+            visibility: hidden;
+          "
+          src="./images/hh11.png"
+        />
+        <img
+          id="7-1-4"
+          style="
+            position: absolute;
+            left: 35px;
+            width: 633px;
+            top: 75px;
+            height: 415px;
+            visibility: hidden;
+          "
+          src="./images/ipad11.png"
+        />
+        <img
+          id="5-4-1"
+          style="
+            position: absolute;
+            left: 182px;
+            width: 3px;
+            top: 194px;
+            height: 246px;
+            visibility: hidden;
+          "
+          src="./images/dottedLine.png"
+        />
+        <img
+        id="5-4-2"
+        style="
+          position: absolute;
+          left: 163px;
+          width: 44px;
+          top: 444px;
+          height: 11px;
+          visibility: hidden;
+        "
+        src="./images/mark.png"
+      />
+      <img
+        id="5-4-3"
+        style="
+          position: absolute;
+          left: 157px;
+          width: 44px;
+          top: 432px;
+          height: 11px;
+          visibility: hidden;
+        "
+        src="./images/capture1.png"
+      />
+
+        <div
+          class="tab"
+          id="tab"
+          style="position: absolute; visibility: hidden"
+        >
+          <img
+            id="7-1-2"
+            style="
+              position: absolute;
+              left: 198px;
+              width: 508px;
+
+              height: 444px;
+              visibility: hidden;
+            "
+            src="./images/mul.png"
+          />
+
+          <div
+            class="tabcontent"
+            id="tab2"
+            style="position: absolute; visibility: hidden"
+          >
+            <form id="form1" class="container">
+              <label
+              id="tbuser"
+                for="fname"
+                style="
+                  position: relative;
+                  font-size: 12px;
+                  font-family: Verdana;
+                "
+                >Create Project:
+              </label>
+              <input
+                type="text"
+                id="fname"
+                style="
+                  position: absolute;
+                  border: none;
+                  width: 102px;
+                  font-size: 12px;
+                  left: 102px;
+                  border-bottom: 1px solid black;
+                "
+                maxlength=""
+                name="fname"
+                placeholder="Enter project name"
+                oninput="setTitle(event)"
+              /><br /><br />
+              <label for="lname">Type of plan:</label>
+              <input type="checkbox" id="plan" name="plan" value="Fly" disabled/>
+              <label for="plan" id="fly">Fly</label>
+              <input
+                type="checkbox"
+                id="upload"
+                name="upload"
+                value="upload"
+                disabled
+              />
+              <label for="upload">Upload</label><br /><br />
+              <label for="fh"
+                >Flight Height (m):
+                <select
+                  name="fh"
+                  id="fh"
+                  style="position: absolute; font-size: 10px; left: 121px" disabled
+                  onchange="handleFlightSelection(this)"
+                >
+                  <option value=""><b> </b></option>
+
+                  <option value="45" id="2"><b>45</b></option>
+
+                  <option value="55" id="3"><b>55</b></option></select
+                ><br />
+              </label>
+
+              <div
+                name="ft"
+                id="ft"
+                style="position: absolute; font-size: 10px; visibility: visible"
+                onchange="myFunction()"
+              >
+                <p value=""><b> </b></p>
+
+                <p value="8.18" id="5"><b></b></p>
+
+                <p value="6.22" id="6"><b></b></p>
+
+                
+              </div>
+
+              <p id="demo" style="font-size: 12px">
+                <b> </b>
+              </p>
+              <!-- <label for="res" id="res" style="position: absolute; visibility:hidden"><b>Resolution is 2.74 cm/px.</b></label><br><br> -->
+              <label for="sug"
+                ><em>Suggested flight height is &lt;55m</em></label
+              ><br />
+              <!-- <label for="ft" id="ft" ><b>Flight Time(min):</b></label>
+                    <lable value1="5" id="5"style="position: absolute; visibility: hidden">15</lable>
+                    <lable value="6" id="6" style="position: absolute; visibility: hidden">13</lable>
+                    <label value="7" id="7" >10.45</lable><br> -->
+
+              <p id="demo1" style="font-size: 12px">
+                <b> </b>
+              </p>
+
+              <input
+                type="checkbox"
+                name="area"
+                value="area"
+                id="7-a"
+                disabled
+              />
+              <label for="area" id="7-a1">Show Area (Acre): </label>
+              <label
+                for="area"
+                id="7-aa"
+                style="
+                  position: absolute;
+                  top: 181px;
+                  left: 146px;
+                  visibility: hidden;
+                "
+                >1.28 </label
+              ><br /><br />
+
+              <label for="bat">No of Battery: </label>
+              <label
+                type="text"
+                id="bat"
+                name="bat"
+                value="1"
+                style="
+                  position: absolute;
+                  border: none;
+                  width: 94px;
+                  font-size: 11px;
+                "
+                >1</label
+              ><br />
+
+              <p id="demo2" style="font-size: 12px">
+                <b> </b>
+              </p>
+              <br />
+
+              <div class="dropdown" id="checker2" style="float: center">
+                <lable class="dropbtn" id="checker" onclick="contents()">Preflight check</lable>
+                <div
+                  class="dropdown-content"
+                  id="checker1"
+                  style="left: 102px; top: 275px; visibility: hidden;"
+                >
+                  <input
+                    type="checkbox"
+                    id="drone"
+                    name="drone"
+                    value="Drone"
+                    onchange="checkClicked(event)"
+                  />Drone<br />
+                  <input
+                    type="checkbox"
+                    id="transmitter"
+                    name="transmitter"
+                    value="transmitter"
+                    onchange="checkClicked(event)"
+                  />Transmitter<br />
+                  <input
+                    type="checkbox"
+                    id="land"
+                    name="land"
+                    value="land"
+                    onchange="checkClicked(event)"
+                  />Landing pad<br />
+                  <input
+                    type="checkbox"
+                    id="Ipad"
+                    name="Ipad"
+                    value="Ipad"
+                    onchange="checkClicked(event)"
+                  />IPad<br />
+                </div>
+                <!-- onchange="checkClicke()" -->
+              </div>
+              <input
+                type="button"
+                id="sub1"
+                value="Start the mission"
+                style="
+                  position: absolute;
+                  width: 220px;
+                  font-size: 12px;
+                  margin: 3px;
+                  left: 1px;
+                  padding: 5px;
+                  border: 1px solid black;
+                  top: 314px;
+                  visibility: hidden;
+                "
+                disabled
+              /><br />
+              <p
+                id="num-2"
+                style="
+                  position: absolute;
+                  top: 336px;
+                  font-size: 12px;
+                  visibility: hidden;
+                "
+              >
+                No of satellite: 15
+              </p>
+              <br />
+              <br />
+              <p
+                id="num-1"
+                style="
+                  position: absolute;
+                  top: 363px;
+                  font-size: 12px;
+                  visibility: hidden;
+                "
+              >
+                No of Images:
+              </p>
+              <div
+                id="handleCount"
+                style="position: absolute; visibility: hidden"
+              >
+                <div id="myBar">0</div>
+              </div>
+              <br />
+              <br />
+              <p
+                id="num-3"
+                style="
+                  position: absolute;
+                  top: 388px;
+                  font-size: 12px;
+                  visibility: hidden;
+                "
+              >
+                <em> Simulation speed is 5 times the actual speed. </em>
+              </p>
+              <br />
+              <p
+                id="p7-1"
+                style="
+                  position: absolute;
+                  left: 55px;
+                  top: 130px;
+                  font-size: 28px;
+                  visibility: hidden;
+                  color: white;
+                "
+              ></p>
+              <p
+                id="p7-2"
+                style="
+                  position: absolute;
+                  left: 55px;
+                  top: 165px;
+                  font-size: 28px;
+                  visibility: hidden;
+                  color: white;
+                "
+              ></p>
+              
+            </form>
+            
+
+            <p
+              id="10-4"
+              style="
+                position: absolute;
+                font-size: 20px;
+                width: 254px;
+                left: 331px;
+                top: 211px;
+                visibility: hidden;
+              "
+            >
+              Upload the image here.
+            </p>
+          </div>
+        </div>
+
+        <img
+          id="7-1-5"
+          style="
+            position: absolute;
+            left: 232px;
+            width: 476px;
+            top: 58px;
+            height: 445px;
+            visibility: hidden;
+          "
+          src="./images/multi1.png"
+        />
+
+        <img
+          id="7-1-9"
+          style="
+            position: absolute;
+            left: 232px;
+            width: 476px;
+            top: 58px;
+            height: 445px;
+            visibility: hidden;
+          "
+          src="./images/multi2.png"
+        />
+        <!-- <img
+          id="7-1-10"
+          style="
+            position: absolute;
+            left: 232px;
+            width: 476px;
+            top: 58px;
+            height: 445px;
+            visibility: hidden;
+          "
+          src="./images/"
+        /> -->
+
+        <img
+          id="7-1-11"
+          style="
+            position: absolute;
+            left: 373px;
+            width: 176px;
+            top: 139px;
+            height: 141px;
+            visibility: hidden;
+          "
+          src="./images/upload2.png"
+        />
+        <img
+          id="7-1-6"
+          style="
+            position: absolute;
+            left: 628px;
+            width: 22px;
+
+            height: 19px;
+            top: 333px;
+            rotate: 70deg;
+            visibility: hidden;
+          "
+          src="./images/plane1.png"
+        />
+        <img
+          id="7-1-66"
+          style="
+            position: absolute;
+            left: 537px;
+            width: 22px;
+
+            height: 19px;
+            top: 390px;
+            rotate: 248deg;
+            visibility: hidden;
+          "
+          src="./images/plane1.png"
+        />
+        <img
+          id="7-1-7"
+          style="
+            position: absolute;
+            left: 680px;
+            width: 26px;
+
+            height: 24px;
+            top: 57px;
+            rotate: 90deg;
+            visibility: hidden;
+          "
+          src="./images/batt.png"
+        />
+        <img
+          id="7-1-7a"
+          style="
+            position: absolute;
+            left: 523px;
+            width: 22px;
+
+            height: 21px;
+            top: 396px;
+            
+            visibility: hidden;
+          "
+          src="./images/home.png"
+        />
+        <img
+          id="7-1-7b"
+          style="
+            position: absolute;
+            left: 633px;
+            width: 22px;
+
+            height: 21px;
+            top: 348px;
+            
+            visibility: hidden;
+          "
+          src="./images/home.png"
+        />
+        <button
+          id="10-1"
+          style="
+            position: absolute;
+            margin-top: 20px;
+            width: 150px;
+            top: 395px;
+            left: 367px;
+            height: 28px;
+            color: antiquewhite;
+
+            background-color: rgb(2, 2, 2);
+            border: none;
+            border-radius: 4px;
+            visibility: hidden;
+          "
+        >
+          OK
+        </button>
+        <img
+          id="7-1-8"
+          style="
+            position: absolute;
+            left: 650px;
+            width: 27px;
+
+            height: 20px;
+            top: 62px;
+            rotate: 90deg;
+            visibility: hidden;
+          "
+          src="./images/sat1.png"
+        />
+        <lable for="out" id="out1" style="position: absolute; left: 287px; width:134px; top: 87px; visibility: hidden"> Project name:</lable>
+        <p class="output" id="output1" style="position: absolute; left:407px; top:75px; z-index: index 101; font-size: 14px; color: black; visibility: hidden;"> </p>
+        <div
+          id="10-2"
+          style="
+            position: absolute;
+            visibility: hidden;
+            width: 317px;
+            top: 200px;
+            left: 350px;
+          "
+        >
+          <p id="l1" style="position: absolute; visibility: hidden; top: -41px">
+            Loading!
+          </p>
+          <div id="laodProgress">
+            <div id="load">10%</div>
+          </div>
+        </div>
+        <p
+          id="up1"
+          style="
+            position: absolute;
+            left: 392px;
+            top: 235px;
+            width: 191px;
+            visibility: hidden;
+          "
+          class="animate-bottom"
+        >
+          Upload is completed!
+        </p>
+
+        <!-- <p id="form1" style="top:20px; left:20px; ">
+          <form>
+            <input type="text"
+          </form>
+          Create Project
+
+        </p> -->
+        <span
+          id="dialo"
+          style="
+            position: absolute;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: black;
+            border-radius: 5px;
+            left: 342px;
+            top: 189px;
+            width: 219px;
+            visibility: hidden;
+          "
+        >
+          <p
+            id="divig1"
+            style="color: white; font-size: 15px; padding: 5px; margin-top: 0px"
+          >
+            Note:- Click on the check button of Upload, to process the captured
+            data.
+          </p>
+          <input
+            type="button"
+            style="
+              cursor: pointer;
+              border-radius: 5px;
+              margin: 0auto;
+              margin-left: 71px;
+              margin-top: 0px;
+            "
+            id="5-6-1"
+            value="OK"
+            onclick=" hidedial1();"
+          />
+        </span>
+        <span
+          id="dialo1"
+          style="
+            position: absolute;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: black;
+            border-radius: 5px;
+            left: 342px;
+            top: 189px;
+            width: 219px;
+            visibility: hidden;
+          "
+        >
+          <p
+            id="divig2"
+            style="color: white; font-size: 15px; padding: 5px; margin-top: 0px"
+          >
+            Note:- Click on the check button of Upload, to process the captured
+            data.
+          </p>
+          <input
+            type="button"
+            style="
+              cursor: pointer;
+              border-radius: 5px;
+              margin: 0auto;
+              margin-left: 71px;
+              margin-top: 0px;
+            "
+            id="5-6-11"
+            value="OK"
+            onclick=" hidedial2();"
+          />
+        </span>
+        <span
+          id="dialo2"
+          style="
+            position: absolute;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: black;
+            border-radius: 5px;
+            left: 342px;
+            top: 189px;
+            width: 219px;
+            visibility: hidden;
+          "
+        >
+          <p
+            id="divig3"
+            style="color: white; font-size: 15px; padding: 5px; margin-top: 0px"
+          >
+            Note:- Click on the check button of Upload, to process the captured
+            data.
+          </p>
+          <input
+            type="button"
+            style="
+              cursor: pointer;
+              border-radius: 5px;
+              margin: 0auto;
+              margin-left: 71px;
+              margin-top: 0px;
+            "
+            id="5-6-22"
+            value="OK"
+            onclick=" hidedial3();"
+          />
+        </span>
+        <input type="button" name="next" value="Next" id="next1" style="position: absolute; visibility:hidden; top:467px; left: 600px; width: 90px;"></input>
+        
+        <img
+          id="8-1-1"
+          style="
+            position: absolute;
+            top: 29px;
+            left: -40px;
+            width: 784px;
+            height: 502px;
+
+            visibility: hidden;
+          "
+          src="./images/ipad11.png"
+        />
+
+        <div class="tab3" id="tab3" style="position: absolute; visibility: hidden;">
+          <form name="test" style="position: absolute; font-size:12px; padding:5px;">
+            <label>Processed Result:</label><br />
+            <br />
+            <input
+              type="radio"
+              id="one"
+              name="field"
+              value="one"
+              onchange="check_value()"
+            />Orthomosaic<br /><br />
+            
+            <input
+
+              type="radio"
+              id="two"
+              name="field"
+              value="two"
+              onchange="check_value()"
+              data-title="NIR=(NIR-Red)/(NIR+Red)"
+             
+            /><div class="tooltip">NDVI
+              
+              <span class="tooltiptext" style="width:183px; height: 37px;">NDVI =<span class="frac"><sup>(NIR-Red)</sup><span>&frasl;</span><sub>(NIR+Red)</sub></span> </span>
+            </div><br /><br />
+
+            <div id="grad1" style="text-align:left;width:142px;color:#888888; visibility: hidden;">
+              
+              </div>
+              <pre id="range1" style="position: absolute; font: size 12px; visibility: hidden;">-0.94            0.96</pre>
+          </br></br>
+            <input
+              type="radio"
+              id="three"
+              name="field"
+              value="three"
+              onclick="res1()"
+              onchange="check_value()"
+            /><div class="tooltip">NDRE
+              
+              <span class="tooltiptext" style="width:183px; height: 37px;">NDRE =<span class="frac"><sup>(NIR-Rededge)</sup><span>&frasl;</span><sub>(NIR+Rededge)</sub></span> </span>
+            </div><br /><br />
+
+            <div id="grad2" style="text-align:left;width:142px;color:#888888; visibility: hidden;">
+              
+            </div>
+            <pre id="range2" style="position: absolute; font: size 12px;visibility: hidden;">-0.71            0.85</pre><br><br>
+            <input
+              type="radio"
+              id="four"
+              name="field"
+              value="four"
+              
+              onclick="res2()"
+              onchange="check_value()"
+            /><div class="tooltip">GNDVI
+              
+              <span class="tooltiptext" style="width:183px; height: 37px;">GNDVI =<span class="frac"><sup>(NIR-Green)</sup><span>&frasl;</span><sub>(NIR+Green)</sub></span> </span>
+            </div><br /><br />
+            <div id="grad3" class="four"style="text-align:left;width:142px;color:#888888; visibility: hidden;">
+              
+            </div>
+            <pre id="range3" style="position: absolute; font: size 12px;visibility: hidden;">-0.92            0.97</pre><br><br>
+            <div class="hide1">I am shown when someone hovers over the div above.</div>            
+          </form>
+
+          <div id="imagedest" class="imagedest"></div>
+        </div>
+        <img
+          id="8-1-5"
+          style="
+            position: absolute;
+            top: 57px;
+            left: 158px;
+            width: 551px;
+            height: 445px;
+
+            visibility: hidden;
+          "
+          src="./images/mul.png"
+        />
+        <img
+          id="8-1-2"
+          style="
+            position: absolute;
+            top: 57px;
+            left: 158px;
+            width: 551px;
+            height: 445px;
+
+            visibility: hidden;
+          "
+          src="./images/mulortho.png"
+        />
+        <img
+          id="8-1-3"
+          style="
+            position: absolute;
+            top: 57px;
+            left: 158px;
+            width: 551px;
+            height: 445px;
+
+            visibility: hidden;
+          "
+          src="./images/mulndvi.png"
+        />
+        <img
+          id="8-1-4"
+          style="
+            position: absolute;
+            top: 57px;
+            left: 158px;
+            width: 551px;
+            height: 445px;
+
+            visibility: hidden;
+          "
+          src="./images/mulndre.png"
+        />
+        <img
+          id="8-1-44"
+          style="
+            position: absolute;
+            top: 57px;
+            left: 158px;
+            width: 551px;
+            height: 445px;
+
+            visibility: hidden;
+          "
+          src="./images/mulgndvi.png"
+        />
+      </div>
+      <div class="simsubscreen" id="canvas8" style="visibility: hidden">
+        
+        <h2 class="steptext" style="position: absolute; font-size :20px; ">Observation: </h2><br><br>
+        <h3 style="position: absolute; font-size :13px;left: 51px; top: 55px;">For the flight mission carried following are the observation:</h3><br><br><br>
+        <div id="info" style="position: absolute; left:50px; max-width: 329px; width: 364px;">
+          <p style="position: absolute; font-size :13px; font-weight: bold;"> Area surveyed: 1.28 Acre</p><br><br>
+        
+        <p style="position: absolute; font-size :13px; font-weight: bold;"> No of batteries: 1  </p><br><br>
+        <p style="position: absolute; font-size :13px; font-weight: bold;"> Front overlap: 85%, Side overlap: 80%</p><br><br>
+        
+        <table>
+          <caption></caption>
+          <tr>
+            <th>Flight height (m)</th>
+            <th>Resolution (cm/px)</th>
+            <th>Flight Time (min)</th>
+            <th>No of Images</th>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>2.4</td>
+            <td>8.18</td>
+            <td>912</td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>2.9</td>
+            <td>6.22</td>
+            <td>630</td>
+          </tr>
+          
+          
+        </table>
+        
+        <p style="position: absolute; font-size :13px; font-weight: bold; width: 442px;"> For the surveyed area, vegetation indices varies as follows: </p><br><br>
+        <table >
+          <caption></caption>
+          <tr>
+            <th> </th>
+            <th> NDVI</th>
+            <th>NDRE</th>
+            <th>GNDVI</th>
+            
+          </tr>
+          <tr>
+            <th>Highest value</th>
+            <td>0.964912</td>
+            <td>0.857142</td>
+            <td>0.972602</td>
+          </tr>
+          <tr>
+            <th>Lowest value</th>
+            <td>-0.948718</td>
+            <td>-0.714286</td>
+            <td>-0.923077</td>
+          </tr>
+          
+          
+        </table>
+        </div>
+      </div>
+
+      <span
+        id="question-div"
+        class="fadeIn"
+        style="left: 416px; top: 250px; width: 100%"
+      >
+        <p id="divq" style="font-family: verdana; font-size: 14px">
+          Both ends of the pipe must be trimmed to ensure parallel faces.
+        </p>
+        <p id="ans"></p>
+      </span>
+
+      <div id="nav">
+        <img id="nextButton" onclick="navNext()" src="./images/Next.png" />
+      </div>
+      <img
+        class=""
+        id="arrow1"
+        style="visibility: hidden"
+        src="images/arrow1.png"
+      />
+      <!-- <img
+        class=""
+        id="arrow2"
+        style="visibility: hidden"
+        src="images/arrow3.png"
+      /> -->
+
+      <div id="copyright">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources
+        & Ocean Engineering
+      </div>
+    </div>
+  <script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
